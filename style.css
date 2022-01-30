@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-grayish-blue: hsl(229, 23%, 23%);
+    --dark-gray: hsl(229, 23%, 23%);
+    --font: "Kumbh Sans", sans-serif;
+  }
+  
+canvas{
+    position: relative;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--font);
+}
+.contenedor{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+.bold {
+    font-weight: 700;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+.text-small {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+.text-medium {
+    font-size: 14px;
+}
+
+.text-large {
+    font-size: 18px;
+}
+h2,
+.text-v-large {
+    font-size: 20px;
+}
+.spanSpace{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 8px 8px 35px rgba(68, 68, 68, 0.3);
+    /* height: 375px; */
+    background-color: #fff;
+    border-radius: 17px;
+    overflow: hidden;
+    width: 380px;
+    min-width: 280px;
+    z-index: 1;
+    margin: 0 100px;
+}
+.card__top-bg {
+    background: center /cover no-repeat  url(/img/cars.jpg);
+    width: 100%;
+    height: 140px;
+}
+.card__header {
+    position: relative;
+    top: -70px;
+    text-align: center;
+    width: 100%;
+}
+.card__avatar {
+    margin: 10px;
+    width: 96px;
+    height: 96px;
+    border: 5px solid rgb(244, 255, 243);
+    border-radius: 50%;
+    box-sizing: content-box;
+    object-fit: cover;
+}
+.card__user {
+    padding-top: 6px;
+    /* position: relative; */
+    width: 100%;
+    /* z-index: -100000; */
+}
+.card__stats {
+    width: 100%;
+    height: 88px;
+    border-top: 1px solid var(--dark-gray);
+    text-align: center;
+    padding: 0px 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__stats > div {
+    width: 80px;
+}
